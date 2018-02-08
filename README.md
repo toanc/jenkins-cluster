@@ -130,7 +130,7 @@ Similarly, the slave machine will be created in the mean time with master. But I
 ![alt_test](https://i.imgur.com/yfsI5pJ.png)
 
 
-##FAQ 
+## FAQ 
 
 What was inside my docker image ? 
 
