@@ -131,7 +131,8 @@ Similarly, the slave machine will be created in the meantime with master node. B
 
 You probably will receive the IP address of all nodes once it was finished
 
-```"outputs": {
+```
+"outputs": {
                 "public_ip": {
                     "sensitive": false,
                     "type": "list",
@@ -153,7 +154,8 @@ You probably will receive the IP address of all nodes once it was finished
                         "35.185.243.191"
                     ]
                 }
-            },```
+            },
+  ```
 
 
 ## FAQ 
