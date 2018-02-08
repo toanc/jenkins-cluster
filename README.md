@@ -125,9 +125,35 @@ Firstly, my idea is using some Key Value system like ETCD or CONSUL. But the mai
 
 `metadata` - Please don't forget to change `~/.ssh/id_rsa.pub` location to your SSH public key. This is important to allow you access to your virtual machine
 
-Similarly, the slave machine will be created in the mean time with master. But It will wait for 2 minutes to fetch the correct Key - IP Address from KeyValue.xyz. Once it has enough information, 1 container instance will be spined up with these information and you can see both of them up from Jenkins master dashboard 
+Similarly, the slave machine will be created in the meantime with master node. But It will be waited for 2 minutes to fetch the correct Key - IP Address from KeyValue.xyz. Once it has enough information, 1 container instance will be provisioned with the information which received from KeyValue and you can see both of them up from Jenkins master dashboard.
 
 ![alt_test](https://i.imgur.com/yfsI5pJ.png)
+
+You probably will receive the IP address of all nodes once it was finished
+
+```"outputs": {
+                "public_ip": {
+                    "sensitive": false,
+                    "type": "list",
+                    "value": [
+                        "35.199.162.152"
+                    ]
+                },
+                "public_ip_master": {
+                    "sensitive": false,
+                    "type": "list",
+                    "value": [
+                        "35.199.162.152"
+                    ]
+                },
+                "public_ip_slave": {
+                    "sensitive": false,
+                    "type": "list",
+                    "value": [
+                        "35.185.243.191"
+                    ]
+                }
+            },```
 
 
 ## FAQ 
@@ -141,3 +167,5 @@ You can find more details what was inside :) from here https://hub.docker.com/r/
 - Getting Slave key
 
 without GUI for all of them
+
+Happy Hacking ! 
