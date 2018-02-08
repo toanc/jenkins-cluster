@@ -18,8 +18,9 @@ The goal will be : Using Terraform for automation all Jenkins configurations to 
 
 1. Configure your own Google JSON file
 2. Change your SSH public key
-3. Waiting 
-4. Accessing to the IP address under port 8080
+3. Terraform plan - Terraform apply 
+4. Waiting 
+5. Accessing to the IP address under port 8080
 
 ### File Configuration
 #### provider.tf
