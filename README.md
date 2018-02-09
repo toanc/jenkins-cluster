@@ -104,7 +104,7 @@ i=`hostname --ip-address`
 f=`docker exec -i master-1 bash -c 'java -jar /tmp/jenkins-cli.jar -s http://localhost:8080 -remoting groovy /tmp/findkey --username admin --password admin'`
 
 echo $f > /tmp/checkf
-curl -X POST https://api.keyvalue.xyz/07580978/visenze --data ' ip: '$i' secret: '$f' '
+curl -X POST https://api.keyvalue.xyz/[you-own-link] --data ' ip: '$i' secret: '$f' '
 SCRIPT
 
  metadata {
